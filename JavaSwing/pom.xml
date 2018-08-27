@@ -13,6 +13,7 @@
         <module>Swing5-SimpleToolbars</module>
         <module>Swing6-ComunicacionEntreComponentes</module>
         <module>Swing7-Listeners</module>
+        <module>Swing8-size</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
