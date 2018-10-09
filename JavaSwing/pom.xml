@@ -18,6 +18,9 @@
         <module>Swing10-TextFields-Labels</module>
         <module>Swing11-Controls-With-GridBagLayout</module>
         <module>Swing12-Events</module>
+        <module>Swing13-ListBoxes</module>
+        <module>Swing14-WorkingWithListData</module>
+        <module>swing15-ComboBox</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
