@@ -25,6 +25,7 @@
         <module>swing17-RadioButtons</module>
         <module>swing18-Menus</module>
         <module>swing19-MenusWithCheckbos</module>
+        <module>swing20-Mnemonics</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
