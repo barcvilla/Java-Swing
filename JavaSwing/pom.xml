@@ -22,6 +22,8 @@
         <module>Swing14-WorkingWithListData</module>
         <module>swing15-ComboBox</module>
         <module>swing16-CheckBoxes</module>
+        <module>swing17-RadioButtons</module>
+        <module>swing18-Menus</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
