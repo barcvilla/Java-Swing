@@ -29,6 +29,7 @@
         <module>swing21-OptionPanes</module>
         <module>swing22-FileChooser</module>
         <module>swing23-FilteringFileChooser</module>
+        <module>swing24-DataModel</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
