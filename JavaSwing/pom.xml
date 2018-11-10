@@ -30,6 +30,20 @@
         <module>swing22-FileChooser</module>
         <module>swing23-FilteringFileChooser</module>
         <module>swing24-DataModel</module>
+        <module>swing25-Controller</module>
+        <module>swing26-Tables</module>
+        <module>swing27-Serialization</module>
+        <module>swing28-Popup</module>
+        <module>swing29-TableRowSelection</module>
+        <module>swing30-DeletingRowsTable</module>
+        <module>swing31-Spinners</module>
+        <module>swing32-PasswordFields</module>
+        <module>swing33-Preferences</module>
+        <module>swing34-LookBetter-Dialog</module>
+        <module>swing35-ConnectionToDataBase</module>
+        <module>swing36-GettingValuesFromDB</module>
+        <module>swing37-AddValuesToDB</module>
+        <module>swing38-RetrievingDataFromDB</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
