@@ -44,6 +44,7 @@
         <module>swing36-GettingValuesFromDB</module>
         <module>swing37-AddValuesToDB</module>
         <module>swing38-RetrievingDataFromDB</module>
+        <module>swing39-Interceptin-Window-Closing</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
