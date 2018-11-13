@@ -6,7 +6,7 @@
         <artifactId>JavaSwing</artifactId>
         <version>1.0</version>
     </parent>
-    <artifactId>swing39-Interceptin-Window-Closing</artifactId>
+    <artifactId>swing40-Buttons-Icons</artifactId>
     <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
