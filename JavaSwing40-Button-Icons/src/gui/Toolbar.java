@@ -26,17 +26,17 @@ public class Toolbar extends JPanel implements ActionListener {
 
     private ToolBarListener textListener;
     
-    private static ImageIcon iSave = new ImageIcon(Toolbar.class.getResource("save16.gif"));
+    //private static ImageIcon iSave = new ImageIcon(Toolbar.class.getResource("/images/save16.gif"));
     //private static ImageIcon iRefresh = new ImageIcon(Toolbar.class.getResource("Refresh16.gif"));
 
     public Toolbar() {
         setBorder(BorderFactory.createEtchedBorder());
         saveButton = new JButton("Save");
-        //saveButton.setIcon(createIcon("Save16.gif"));
-        saveButton.setIcon(iSave);
+        saveButton.setIcon(createIcon("/images/save16.gif"));
+        //saveButton.setIcon(iSave);
         
         refreshButton = new JButton("Refresh");
-        //refreshButton.setIcon(createIcon("Refresh16.gif"));
+        refreshButton.setIcon(createIcon("/images/refresh16.gif"));
         //refreshButton.setIcon(iRefresh);
 
         saveButton.addActionListener(this);
