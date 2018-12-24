@@ -10,6 +10,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTree;
+import javax.swing.event.CellEditorListener;
+import javax.swing.event.ChangeEvent;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -68,6 +70,8 @@ public class MessagePanel extends JPanel{
         serverTree.setEditable(true);
         //set events
         serverTree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
+        
+        /**
         serverTree.addTreeSelectionListener(new TreeSelectionListener() {
             @Override
             public void valueChanged(TreeSelectionEvent e) {
@@ -80,6 +84,20 @@ public class MessagePanel extends JPanel{
                     int id = ((ServerInfo) userObject).getId();
                     System.out.println("User object with id: " + id);
                 }
+            }
+        });
+        **/
+        
+        treeCellEditor.addCellEditorListener(new CellEditorListener() {
+            @Override
+            public void editingStopped(ChangeEvent e) {
+                ServerInfo info = (ServerInfo)treeCellEditor.getCellEditorValue();
+                System.out.println(info + ": " + info.getId() + "; " + info.isChecked());
+            }
+
+            @Override
+            public void editingCanceled(ChangeEvent e) {
+                
             }
         });
         
