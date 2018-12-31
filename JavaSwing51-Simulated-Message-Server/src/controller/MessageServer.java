@@ -6,6 +6,7 @@
 package controller;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -16,7 +17,7 @@ import model.Message;
  *
  * @author PC
  */
-public class MessageServer {
+public class MessageServer implements Iterable<Message>{
     private Map<Integer, List<Message>> messages;
     private List<Message> selected;
     
@@ -50,5 +51,45 @@ public class MessageServer {
     {
         return selected.size();
     }
+
+    @Override
+    public Iterator<Message> iterator() {
+        return new MessageIterator(selected);
+    }
+}
+
+class MessageIterator implements Iterator
+{
+    private Iterator<Message> iterator;
+    
+    public MessageIterator(List<Message> message)
+    {
+        iterator = message.iterator();
+    }
+    
+    @Override
+    public boolean hasNext() {
+        return iterator.hasNext();
+    }
+
+    @Override
+    public Object next() {
+        try
+        {
+            Thread.sleep(1000);
+        }
+        catch(InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+        
+        return iterator.next();
+    }
+
+    @Override
+    public void remove() {
+        iterator.remove(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
     
